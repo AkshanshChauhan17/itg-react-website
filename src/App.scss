@@ -34,6 +34,18 @@
     font-weight: 800;
 }
 
+hr {
+    border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.active {
+    color: rgb(255, 255, 255);
+}
+
+.unactive {
+    color: rgba(255, 255, 255, 0.60);
+}
+
 .nav {
     .upper-nav {
         background-color: black;
@@ -81,11 +93,9 @@
             p {
                 padding: 20px;
                 cursor: pointer;
-                color: white;
             }
             p:hover {
-                background-color: #ffffff;
-                color: #1E78AF;
+                color: #ffffff;
             }
         }
         .lower {
