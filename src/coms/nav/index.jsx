@@ -1,4 +1,3 @@
-import NavLinks from "./links";
 import MidNav from "./mid";
 import UpperNav from "./upper";
 
@@ -7,7 +6,6 @@ export default function Nav() {
         <div className="nav">
             <UpperNav />
             <MidNav />
-            <NavLinks />
         </div>
     )
 }
