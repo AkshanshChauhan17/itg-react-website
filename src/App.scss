@@ -215,6 +215,11 @@ hr {
                 flex: 1.618;
                 word-spacing: 1.618px;
                 line-height: 45px;
+                font-size: 15px;
+                text-align: center;
+                span {
+                    font-size: 25px;
+                }
             }
             .right {
                 width: 90%;
@@ -332,6 +337,7 @@ hr {
             justify-self: right;
             cursor: pointer;
             font-size: 25px;
+            justify-self: center;
         }
         .close:active {
             color: rgb(193, 0, 0);
@@ -340,12 +346,13 @@ hr {
             gap: 0px;
             display: grid;
             flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
+            align-items: normal;
+            justify-content: d;
             p {
+                width: auto;
                 padding: 20px;
                 cursor: pointer;
-                font-size: 25px;
+                font-size: 15px;
             }
             p:hover {
                 color: #ffffff;
