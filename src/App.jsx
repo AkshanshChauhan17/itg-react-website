@@ -5,10 +5,16 @@ import Nav from './coms/nav'
 import NavLinks from './coms/nav/links';
 
 function App() {
+  const [scrollVal, setScrollVal] = useState();
+
+  window.onscroll = () =>{
+    setScrollVal(window.scrollY); console.log(scrollVal);
+  }
+
   return (
     <div className='main'>
       <Nav />
-      <NavLinks />
+      <NavLinks sv={scrollVal} />
       <Home />
     </div>
   )
