@@ -409,10 +409,14 @@ hr {
             width: 100%;
             display: grid;
             justify-items: center;
+            align-content: start;
             height: 100vh;
             gap: 40px;
+            padding: 0px 0px;
             zoom: 50%;
             .left {
+                height: fit-content;
+                padding: 20px 0px;
                 width: 90%;
                 margin: 0px;
                 background-color: #A31010;
