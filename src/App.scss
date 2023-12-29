@@ -404,6 +404,34 @@ hr {
                 }
             }
         }
+        .tequip {
+            margin: 0px auto;
+            width: 100%;
+            display: grid;
+            justify-items: center;
+            height: 100vh;
+            gap: 40px;
+            zoom: 50%;
+            .left {
+                width: 90%;
+                margin: 0px;
+                background-color: #A31010;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .right {
+                margin: 0px;
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                p:nth-child(2) {
+                    text-align: justify;
+                }
+            }
+        }
     }
     .nav {
         .upper-nav {
