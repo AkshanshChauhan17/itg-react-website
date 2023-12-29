@@ -135,6 +135,7 @@ hr {
             flex: 1.618;
             word-spacing: 1.618px;
             line-height: 45px;
+            text-align: justify;
         }
         .right {
             width: calc(100vw * 0.382);
@@ -240,10 +241,10 @@ hr {
                 width: 90%;
                 margin: 40px 20px;
                 flex: 1.618;
-                word-spacing: 1.618px;
-                line-height: 45px;
+                word-spacing: 0px;
+                line-height: 25px;
                 font-size: 15px;
-                text-align: center;
+                text-align: justify;
                 span {
                     font-size: 25px;
                 }
