@@ -378,7 +378,7 @@ hr {
                 justify-content: center;
                 gap: 40px;
                 flex-wrap: wrap;
-                zoom: 60%;
+                zoom: 20%;
             }
             .link-section {
                 display: flex;
@@ -510,13 +510,14 @@ hr {
     }
     .small-card {
         outline: 1px solid rgb(161, 161, 161);
-        width: 400px;
+        width: calc(90% / 2);
         .upper {
             width: 100%;
         }
         .lower {
             text-align: center;
             padding: 20px;
+            zoom: 150%;
         }
     }
     .nav-links {
