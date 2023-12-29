@@ -183,10 +183,13 @@ hr {
     }
     .tequip {
         margin: 0px auto;
-        width: calc(100vw - 160px);
+        width: calc(100vw - 160px - 20px);
         display: flex;
         height: 100vh;
         gap: 40px;
+        padding: 0px 80px;
+        border-top: 1px solid #A31010;
+        border-bottom: 1px solid #A31010;
         .left {
             width: $golden-percentage-rem;
             margin: 40px 0px;
@@ -311,22 +314,25 @@ hr {
         }
         .tequip {
             margin: 40px auto;
-            width: 100%;
+            width: calc(100% - 80px);
             display: grid;
-            height: 100vh;
             gap: 40px;
+            padding: 40px 0px;
+            justify-items: center;
             .left {
-                width: calc(100% - 160px);
-                margin: 0px 80px;
+                width: calc(100% - 80px);
+                margin: 0px 0px;
                 background-color: #A31010;
                 color: white;
                 display: flex;
+                height: fit-content;
+                padding: 20px 0px;
                 align-items: center;
                 justify-content: center;
             }
             .right {
-                margin: 20px 80px;
-                width: calc(100% - 160px);
+                margin: 20px 0px;
+                width: calc(100% - 80px);
                 display: flex;
                 flex-direction: column;
                 gap: 40px;
@@ -412,7 +418,7 @@ hr {
             align-content: start;
             height: 100vh;
             gap: 40px;
-            padding: 0px 0px;
+            padding: 80px 0px;
             zoom: 50%;
             .left {
                 height: fit-content;
