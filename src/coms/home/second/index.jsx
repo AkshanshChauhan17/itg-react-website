@@ -5,6 +5,8 @@ import m3 from "../../../assets/images/m3.jpg";
 import m4 from "../../../assets/images/m4.jpg";
 import m5 from "../../../assets/images/m5.jpg";
 import SmallCard from "../../global/smallCards";
+import BigLink from "../../global/bigLinks";
+import { MdAdsClick, MdOutlineWorkspacePremium, MdOutlineMenuBook, MdOutlineContacts } from "react-icons/md";
 
 export default function Second() {
     return (
@@ -17,6 +19,14 @@ export default function Second() {
                 <SmallCard src={m4} name={"Dr. Onkar Singh"} work_in={"Vice Chancellor, Uttarakhand"}/>
                 <SmallCard src={m5} name={"Dr. Amit Agarwal"} work_in={"Director IT Gopeshwar"}/>
             </div>
+            <hr style={{border: "1px solid gray"}} />
+            <div className="link-section">
+                <BigLink iconComponent={<MdAdsClick className="big-link-icon" />} linkName={"ADMISSION"} />
+                <BigLink iconComponent={<MdOutlineWorkspacePremium className="big-link-icon" />} linkName={"PLACEMENT"} />
+                <BigLink iconComponent={<MdOutlineMenuBook className="big-link-icon" />} linkName={"EXAM CELL"} />
+                <BigLink iconComponent={<MdOutlineContacts className="big-link-icon" />} linkName={"CONTACT"} />
+            </div>
+            <hr style={{border: "1px solid gray"}} />
         </div>
     )
 }

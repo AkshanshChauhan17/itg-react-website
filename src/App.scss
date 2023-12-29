@@ -153,6 +153,30 @@ hr {
             flex-wrap: wrap;
             zoom: 50%;
         }
+        .link-section {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            gap: 20px;
+            cursor: pointer;
+            .big-link {
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                height: 300px;
+                gap: 40px;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+                .big-link-icon {
+                    font-size: 65px;
+                }
+            }
+            .big-link:hover {
+                background-color: rgb(255, 253, 202);
+            }
+        }
     }
 }
 
@@ -239,6 +263,28 @@ hr {
                 gap: 40px;
                 flex-wrap: wrap;
                 zoom: 60%;
+            }
+            .link-section {
+                display: grid;
+                width: 90vw;
+                gap: 20px;
+                cursor: pointer;
+                .big-link {
+                    width: 90vw;
+                    display: flex;
+                    flex-direction: column;
+                    height: 300px;
+                    gap: 40px;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 25px;
+                    .big-link-icon {
+                        font-size: 65px;
+                    }
+                }
+                .big-link:hover {
+                    background-color: rgb(255, 253, 202);
+                }
             }
         }
     }
