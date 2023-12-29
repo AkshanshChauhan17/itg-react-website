@@ -1,7 +1,7 @@
 * {
   padding: 0px;
   margin: 0px;
-  outline: 1px solid rgb(0, 17, 255);
+  outline: 0px solid rgb(0, 17, 255);
   font-family: 'Segoe UI';
   transition-duration: 0.3s;
 }

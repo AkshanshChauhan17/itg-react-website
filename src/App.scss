@@ -37,7 +37,7 @@ $golden-percentage-rem: 38.196%;
 }
 
 hr {
-    border: 1px solid rgba(255, 255, 255, 0.45);
+    border: 0.5px solid rgba(255, 255, 255, 0.45);
 }
 
 .active {
@@ -127,21 +127,61 @@ hr {
 .home {
     position: relative;
     .welcome {
+        position: relative;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         border-bottom: 1px solid #A31010;
         .left {
-            width: calc(100vw /1.618);
+            position: relative;
+            width: calc(50%);
             margin: 80px;
             flex: 1.618;
             word-spacing: 1.618px;
             line-height: 45px;
             text-align: justify;
         }
-        .right {
-            width: calc(100vw * 0.382);
-            object-fit: cover;
+        .mix-right {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: calc(50%);
+            overflow: hidden;
+            svg {
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                z-index: 10;
+                #Path_1 {
+                    fill: red;
+                    cursor: pointer;
+                    opacity: 0;
+                }
+                #Path_1:hover {
+                    opacity: 0.2;
+                }
+                #Path_2 {
+                    fill: rgb(13, 255, 0);
+                    cursor: pointer;
+                    opacity: 0;
+                }
+                #Path_2:hover {
+                    opacity: 0.2;
+                }
+                #Path_3 {
+                    fill: rgb(0, 4, 255);
+                    cursor: pointer;
+                    opacity: 0;
+                }
+                #Path_3:hover {
+                    opacity: 0.2;
+                }
+            }
+            .right {
+                z-index: 1;
+                object-fit: cover;
+            }
         }
     }
     .second {
@@ -270,9 +310,12 @@ hr {
                 line-height: 45px;
                 text-align: justify;
             }
-            .right {
-                width: calc(100vw * 0.382);
-                object-fit: cover;
+            .mix-right {
+                width: 80%;
+                .right {
+                    width: 100%;
+                    object-fit: cover;
+                }
             }
         }
         .second {
@@ -368,8 +411,11 @@ hr {
                     font-size: 25px;
                 }
             }
-            .right {
+            .mix-right {
                 width: 90%;
+            }
+            .right {
+                width: 100%;
                 object-fit: cover;
             }
         }
@@ -397,7 +443,8 @@ hr {
                 zoom: 40%;
                 cursor: pointer;
                 .big-link {
-                    width: 300px;
+                    transition-duration: 0s;
+                    width: calc(90%/2);
                     display: flex;
                     flex-direction: column;
                     height: 300px;
@@ -406,11 +453,12 @@ hr {
                     align-items: center;
                     font-size: 25px;
                     .big-link-icon {
-                        font-size: 65px;
+                        font-size: 100px;
                     }
                 }
                 .big-link:hover {
-                    background-color: rgb(255, 253, 202);
+                    color: white;
+                    background-color: #A31010;
                 }
             }
         }

@@ -17,18 +17,18 @@ export default function NavLinks({sv}) {
     }, [navBarFocus])
 
     return (
-        <div className="nav-links" style={navBarFocus ? {} : {opacity: 0.1, padding: "10px 80px"}} onMouseOver={()=>setNavBarFocus(true)}>
+        <div className="nav-links" style={navBarFocus ? {} : {opacity: 0.1, padding: "10px 80px"}} onMouseMove={()=>setNavBarFocus(true)}>
             {
                 navClosed ? <IoIosArrowDropdown className="close" onClick={()=>setNavClosed(false)}/> : <IoIosArrowDropup className="close" onClick={()=>setNavClosed(true)}/>
             }
             <div className="upper" style={navClosed ? {display: "none"} : null}>
-                <p className={navLink==="HOME" ? "fs-mid bx active" : "fs-mid bx unactive"} onClick={(e)=>setNavLink(e.target.innerText)}>HOME</p>
-                <p className={navLink==="ABOUT US" ? "fs-mid bx active" : "fs-mid bx unactive"} onClick={(e)=>setNavLink(e.target.innerText)}>ABOUT US</p>
-                <p className={navLink==="ADMINISTRATION" ? "fs-mid bx active" : "fs-mid bx unactive"} onClick={(e)=>setNavLink(e.target.innerText)}>ADMINISTRATION</p>
-                <p className={navLink==="ACADEMIC" ? "fs-mid bx active" : "fs-mid bx unactive"} onClick={(e)=>setNavLink(e.target.innerText)}>ACADEMIC</p>
-                <p className={navLink==="DEPARTMENT" ? "fs-mid bx active" : "fs-mid bx unactive"} onClick={(e)=>setNavLink(e.target.innerText)}>DEPARTMENT</p>
-                <p className={navLink==="STUDENTS" ? "fs-mid bx active" : "fs-mid bx unactive"} onClick={(e)=>setNavLink(e.target.innerText)}>STUDENTS</p>
-                <p className={navLink==="FACULTIES" ? "fs-mid bx active" : "fs-mid bx unactive"} onClick={(e)=>setNavLink(e.target.innerText)}>FACULTIES</p>
+                <p className={navLink==="HOME" ? "fs-mid bx active" : "fs-mid bx unactive"} onClick={(e)=>{setNavLink(e.target.innerText); setNavBarFocus(false); setNavClosed(true)}}>HOME</p>
+                <p className={navLink==="ABOUT US" ? "fs-mid bx active" : "fs-mid bx unactive"} onClick={(e)=>{setNavLink(e.target.innerText); setNavBarFocus(false); setNavClosed(true)}}>ABOUT US</p>
+                <p className={navLink==="ADMINISTRATION" ? "fs-mid bx active" : "fs-mid bx unactive"} onClick={(e)=>{setNavLink(e.target.innerText); setNavBarFocus(false); setNavClosed(true)}}>ADMINISTRATION</p>
+                <p className={navLink==="ACADEMIC" ? "fs-mid bx active" : "fs-mid bx unactive"} onClick={(e)=>{setNavLink(e.target.innerText); setNavBarFocus(false); setNavClosed(true)}}>ACADEMIC</p>
+                <p className={navLink==="DEPARTMENT" ? "fs-mid bx active" : "fs-mid bx unactive"} onClick={(e)=>{setNavLink(e.target.innerText); setNavBarFocus(false); setNavClosed(true)}}>DEPARTMENT</p>
+                <p className={navLink==="STUDENTS" ? "fs-mid bx active" : "fs-mid bx unactive"} onClick={(e)=>{setNavLink(e.target.innerText); setNavBarFocus(false); setNavClosed(true)}}>STUDENTS</p>
+                <p className={navLink==="FACULTIES" ? "fs-mid bx active" : "fs-mid bx unactive"} onClick={(e)=>{setNavLink(e.target.innerText); setNavBarFocus(false); setNavClosed(true)}}>FACULTIES</p>
             </div>
             {   
                 navClosed ? 
