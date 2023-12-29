@@ -1,4 +1,5 @@
 import Second from "./second";
+import Tequip from "./tquip3";
 import Welcome from "./welcoming";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
         <div className="home">
             <Welcome />
             <Second />
+            <Tequip />
         </div>
     )
 }

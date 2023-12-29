@@ -1,3 +1,5 @@
+$golden-percentage: 61.804%;
+$golden-percentage-rem: 38.196%;
 .fs-small {
     font-size: 15px;
 }
@@ -179,6 +181,29 @@ hr {
             }
         }
     }
+    .tequip {
+        margin: 0px auto;
+        width: calc(100vw - 160px);
+        display: flex;
+        height: 100vh;
+        gap: 40px;
+        .left {
+            width: $golden-percentage-rem;
+            margin: 40px 0px;
+            background-color: #A31010;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .right {
+            margin: 40px 0px;
+            width: $golden-percentage;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
 }
 
 .announcement-bar {
@@ -223,6 +248,93 @@ hr {
     .lower {
         text-align: center;
         padding: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .home {
+        position: relative;
+        .welcome {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border-bottom: 1px solid #A31010;
+            .left {
+                width: calc(100vw /1.618);
+                margin: 80px;
+                flex: 1.618;
+                word-spacing: 1.618px;
+                line-height: 45px;
+                text-align: justify;
+            }
+            .right {
+                width: calc(100vw * 0.382);
+                object-fit: cover;
+            }
+        }
+        .second {
+            padding: 40px 80px;
+            display: grid;
+            gap: 40px;
+            flex-wrap: wrap;
+            .m-section {
+                display: flex;
+                justify-content: center;
+                gap: 40px;
+                flex-wrap: wrap;
+                zoom: 50%;
+            }
+            .link-section {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                justify-content: center;
+                gap: 20px;
+                cursor: pointer;
+                .big-link {
+                    width: 300px;
+                    display: flex;
+                    flex-direction: column;
+                    height: 300px;
+                    gap: 40px;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 25px;
+                    .big-link-icon {
+                        font-size: 65px;
+                    }
+                }
+                .big-link:hover {
+                    background-color: rgb(255, 253, 202);
+                }
+            }
+        }
+        .tequip {
+            margin: 40px auto;
+            width: 100%;
+            display: grid;
+            height: 100vh;
+            gap: 40px;
+            .left {
+                width: calc(100% - 160px);
+                margin: 0px 80px;
+                background-color: #A31010;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .right {
+                margin: 20px 80px;
+                width: calc(100% - 160px);
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                p:nth-child(2) {
+                    text-align: justify;
+                }
+            }
+        }
     }
 }
 
