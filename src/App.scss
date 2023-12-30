@@ -258,7 +258,7 @@ hr {
         .news-events-section {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: space-evenly;
             gap: 40px;
             .news-and-events-card {
                 width: calc(100% /2 - 40px - 2px);
