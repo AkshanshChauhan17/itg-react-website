@@ -1,13 +1,15 @@
+import { useState } from "react";
 import collage_img from "../../../assets/images/college_image.jpg";
 
 export default function Welcome() {
+    const [isLoading, setIsLoading] = useState(true);
     return (
         <div className="welcome">
             <div className="left fs-mid">
                 <span className="fs-large bx txt-sc">Welcome</span> To The Institute Of Technology Gopeshwar, Where Innovation And Excellence Converge! Our Campus In The Picturesque Setting Of Gopeshwar Is Dedicated To Shaping Future Leaders In Technology And Engineering. Committed To Holistic Development, We Blend Cutting-Edge Education With Hands-On Experience. Join Us On A Journey Of Discovery And Transformation, Where Curiosity, Creativity, And Community Thrive. Welcome To A Hub Of Innovation At The Institute Of Technology Gopeshwar!
             </div>
             <div className="mix-right">
-            <img src={collage_img} title="INSTITUTE OF TECHNOLOGY GOPESHWAR" className="right" />
+            <img src={collage_img} title="INSTITUTE OF TECHNOLOGY GOPESHWAR" className="right" loading="lazy" onLoad={()=>setIsLoading(false)} style={isLoading ? {filter: "blur(10px)"} : {}} />
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500.5" height="500.5" viewBox="0 0 500.5 500.5">
                 <g id="Group_1" data-name="Group 1" transform="translate(0 0.5)">
                     <rect id="Rectangle_1" data-name="Rectangle 1" width="500" height="500" fill="url(#pattern)"/>
