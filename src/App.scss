@@ -137,9 +137,11 @@ hr {
             width: calc(50%);
             margin: 80px;
             flex: 1.618;
-            word-spacing: 1.618px;
-            line-height: 45px;
+            word-spacing: 0px;
+            line-height: calc(3vw);
             text-align: justify;
+            height: fit-content;
+            margin: auto 80px;
         }
         .mix-right {
             position: relative;
@@ -149,6 +151,7 @@ hr {
             width: calc(50%);
             overflow: hidden;
             z-index: 1;
+            margin: 40px 0px;
             svg {
                 height: 100%;
                 width: 100%;
@@ -195,7 +198,6 @@ hr {
             justify-content: center;
             gap: 40px;
             flex-wrap: wrap;
-            zoom: 50%;
         }
         .link-section {
             display: flex;
@@ -205,7 +207,9 @@ hr {
             gap: 20px;
             cursor: pointer;
             .big-link {
-                width: 300px;
+                flex: 1;
+                min-width: calc(100%/2 - 40px);
+                aspect-ratio: 2;
                 display: flex;
                 flex-direction: column;
                 height: 300px;
@@ -346,13 +350,14 @@ hr {
 
 .small-card {
     outline: 1px solid rgb(161, 161, 161);
-    width: 400px;
+    flex: 1;
+    min-width: 200px;
     .upper {
         width: 100%;
     }
     .lower {
         text-align: center;
-        padding: 20px;
+        padding: 10px;
     }
 }
 

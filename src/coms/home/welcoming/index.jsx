@@ -6,7 +6,7 @@ export default function Welcome() {
     return (
         <div className="welcome">
             <div className="left fs-mid">
-                <span className="fs-large bx txt-sc">Welcome</span> To The Institute Of Technology Gopeshwar, Where Innovation And Excellence Converge! Our Campus In The Picturesque Setting Of Gopeshwar Is Dedicated To Shaping Future Leaders In Technology And Engineering. Committed To Holistic Development, We Blend Cutting-Edge Education With Hands-On Experience. Join Us On A Journey Of Discovery And Transformation, Where Curiosity, Creativity, And Community Thrive. Welcome To A Hub Of Innovation At The Institute Of Technology Gopeshwar!
+                <span className="fs-large bx txt-sc">W</span>elcome To The Institute Of Technology Gopeshwar, Where Innovation And Excellence Converge! Our Campus In The Picturesque Setting Of Gopeshwar Is Dedicated To Shaping Future Leaders In Technology And Engineering. Committed To Holistic Development, We Blend Cutting-Edge Education With Hands-On Experience. Join Us On A Journey Of Discovery And Transformation, Where Curiosity, Creativity, And Community Thrive. Welcome To A Hub Of Innovation At The Institute Of Technology Gopeshwar!
             </div>
             <div className="mix-right">
             <img src={collage_img} title="INSTITUTE OF TECHNOLOGY GOPESHWAR" className="right" loading="lazy" onLoad={()=>setIsLoading(false)} style={isLoading ? {filter: "blur(10px)"} : {}} />
